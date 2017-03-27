@@ -1,7 +1,7 @@
 <div class= "container">
  <div class="row">
    <div class="col-sm-6 col-sm-offset-3">
-     <h1>Publicar Producto</h1>
+     <h1><%= form_title%></h1>
       <%= form_for @product do |f| %>
        <div class="form_group">
          <%= f.text_field :name, class: "form-control input-lg", placeholder: "Ingresa el nombre del producto" %>
@@ -13,7 +13,7 @@
         <%= f.text_area :description, class: "form-control input-lg", placeholder: "Ingresa la descripcion del producto" %>
        </div>
        <div>
-        <%= f.submit "Publicar Producto", class: "btn btn-primary btn-lg btn-block" %>
+        <%= f.submit form_title, class: "btn btn-primary btn-lg btn-block" %>
        </div>
       <%end %>
     </div>
